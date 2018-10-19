@@ -1,0 +1,10 @@
+endpoint: https://eu1.prisma.sh/andy-kay-d8cdc8/profile-im/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: typescript-client
+    output: ./generated/prisma
+
+hooks:
+  post-deploy:
+    - prisma generate

@@ -1,0 +1,29 @@
+{
+  "name": "profile-im-web",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "repository": "git@github.com:profile-im/web.git",
+  "author": "Andy Kay <andykay.me@gmail.com>",
+  "license": "BSD 3-Clause",
+  "dependencies": {
+    "@types/next": "^7.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "apollo-boost": "^0.1.16",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^7.0.1",
+    "next-routes": "^1.4.2",
+    "react": "^16.5.2",
+    "react-apollo": "^2.2.4",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.16"
+  }
+}

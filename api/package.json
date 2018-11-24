@@ -6,7 +6,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "npm-run-all --parallel start playground",
-    "playground": "graphql playground"
+    "playground": "graphql playground",
+    "generate": "prisma generate"
   },
   "keywords": [],
   "author": "Andy Kay",
@@ -14,7 +15,8 @@
   "dependencies": {
     "graphql": "0.13",
     "graphql-yoga": "1.16.2",
-    "prisma-client-lib": "^1.18.0"
+    "prisma": "^1.21.0",
+    "prisma-client-lib": "^1.21.0"
   },
   "devDependencies": {
     "graphql-cli": "2.16.7",

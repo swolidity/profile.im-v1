@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "profile.im",
+  "version": "0.0.1",
+  "description": "Share you.",
+  "main": "index.js",
+  "workspaces": {
+    "packages": [
+      "api",
+      "www"
+    ],
+    "nohoist": [
+      "**/graphql/**"
+    ]
+  },
+  "scripts": {
+    "predev": "yarn && cd api && yarn generate",
+    "dev": "wsrun dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamandyk/profile.im.git"
+  },
+  "author": "iamandyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamandyk/profile.im/issues"
+  },
+  "homepage": "https://github.com/iamandyk/profile.im#readme",
+  "devDependencies": {
+    "wsrun": "^3.3.3"
+  }
+}

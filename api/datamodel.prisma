@@ -2,4 +2,21 @@ type User {
   id: ID! @unique
   name: String!
   username: String! @unique
+  photo: String
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Question {
+  id: ID! @unique
+  title: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Answer {
+  id: ID! @unique
+  content: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
 }

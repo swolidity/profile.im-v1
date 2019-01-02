@@ -3,6 +3,7 @@ type User {
   name: String!
   username: String! @unique
   photo: String
+  views: Int
   createdAt: DateTime!
   updatedAt: DateTime!
 }
